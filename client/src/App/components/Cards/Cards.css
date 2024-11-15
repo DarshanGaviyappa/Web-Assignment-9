@@ -1,0 +1,74 @@
+.card {
+  border: 1px solid #86c17a;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: rgb(217, 195, 107);
+  width: 90%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  background-color: rgb(109, 117, 207);
+}
+
+h3 {
+  color: #333;
+  font-size: 1.6em;
+  margin-bottom: 12px;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+h3::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background-color: #469e63;
+  left: 0;
+  bottom: -5px;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.card:hover h3 {
+  color: #ff5afa;
+}
+
+.card:hover h3::after {
+  width: 60px;
+}
+
+p {
+  color: #666;
+  font-size: 1em;
+  line-height: 1.6;
+  transition: color 0.3s ease;
+}
+
+.card:hover p {
+  color: #444;
+}
+
+.card-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 0.9em;
+  color: #fff;
+  background-color: #5aff5a;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card-button:hover {
+  background-color: #e14e54;
+  transform: scale(1.05);
+}
